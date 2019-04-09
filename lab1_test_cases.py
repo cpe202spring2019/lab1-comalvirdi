@@ -44,6 +44,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(bin_search(8, low, high, list_val), 6 )
         self.assertEqual(bin_search(9, low, high, list_val), 7 )
         self.assertEqual(bin_search(10, low, high, list_val), 8 )
+        self.assertEqual(bin_search(11, low, high, list_val), None )
 
 
 
