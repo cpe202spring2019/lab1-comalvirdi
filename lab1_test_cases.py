@@ -18,6 +18,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(max_list_iter([1,5,1]), 5) # max is in the middle
         self.assertEqual(max_list_iter([5,1,1]), 5) # max at beginnging
         self.assertEqual(max_list_iter([1,2,5]), 5) # Max at end
+        self.assertEqual(max_list_iter([]), None) # Max at end
         
 
 
@@ -43,7 +44,7 @@ class TestLab1(unittest.TestCase):
         list_val =[0,1,2,3,4,7,8,9,10]
         low = 0
         high = len(list_val)-1
-        
+
         self.assertEqual(bin_search(0, low, high, list_val), 0 ) # tests target at beginning
         self.assertEqual(bin_search(1, low, high, list_val), 1 ) # tests target in pos 1
         self.assertEqual(bin_search(2, low, high, list_val), 2 ) # tests target in pos 2
